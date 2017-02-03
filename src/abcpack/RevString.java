@@ -24,6 +24,12 @@ public class  RevString{
 	      //call method
 	      String a=reverse("bhanu prakash");
 	      System.out.println(a);
+	      
+	      String s="anu";
+	      System.out.println("old String:-"+s);
+	      String r=new StringBuffer(s).reverse().toString();
+	      
+	      System.out.println("reverse string:"+r);
 	      	}
 	 //with out using loop and string builder
 	//method body

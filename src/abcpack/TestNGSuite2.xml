@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+  
+  <test name="Sanity in FF">
+  <parameter name="browser" value="FF"/> 
+  <listeners>
+        <listener class-name="abcpack.RetryListner"/>
+  </listeners> 
+    
+    <classes>
+        <class name="abcpack.LinksDemo"/>
+        <class name="abcpack.AutoCompleteDemo"/>
+        <class name="abcpack.SyncDemo"/>
+    </classes>
+    
+  </test>
+  <test name="Sanity in GC">
+  <parameter name="browser" value="GC"/>
+  <listeners>
+        <listener class-name="abcpack.RetryListner"/>
+  </listeners> 
+    
+    <classes>
+        <class name="abcpack.LinksDemo"/>
+        <class name="abcpack.AutoCompleteDemo"/>
+        <class name="abcpack.SyncDemo"/>
+    </classes>
+    
+  </test>
+   
+           
+</suite>
